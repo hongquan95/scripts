@@ -26,4 +26,4 @@ usermod -aG docker $USR
 mkdir /home/$USR/.ssh
 touch /home/$USR/.ssh/authorized_keys
 cat "$HOME/.ssh/id_rsa_$USR.pub" > /home/$USR/.ssh/authorized_keys
-ssh -i $HOME/.ssh/id_rsa_$USR $USR@localhost "docker --version && echo '>>> DONE. New user added'"
+ssh -i $HOME/.ssh/id_rsa_$USR $USR@localhost "echo '>>> DONE. New user added'"
